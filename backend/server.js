@@ -4,36 +4,18 @@ const port = process.env.PORT || 8000
 const db = require('./db')
 const bycrypt = require('bcrypt')
 const saltRounds = 10
-const jwt = require('jsonwebtoken')
 const gensalt = bycrypt.genSaltSync(saltRounds)
+const jwt = require('jsonwebtoken')
+const isAuthorized = require('./auth')
 
 
 app.use(express.json())
-const isAuthorized = (request, response, next) => {
-    const authHeader = request.headers['authorization'];
-    const token = authHeader && authHeader.split(' ')[1];
-    if (token == null){
-        return response.status(401).json({
-            message: "UnAuthorized"
-        })
-    }
-    jwt.verify(token,'secret', (err, result)=> {
-        if (err) {
-            return response.status(401).json({
-                message: "UnAuthorized"
-            })
-        }
-        request.user = result;
-        next();
-    })
-
-}
 
 app.post('/register',(request, response)=> {
     const {username, email, password, confirmasiPassword} = request.body;
     if (!username || !email || !password || !confirmasiPassword){
         return response.status(400).json({
-            message: "Harap isi semua bidang yang diperlukan"
+            message: "Harap isi bidang yang diperlukan"
         })
     }
     if (password !== confirmasiPassword){

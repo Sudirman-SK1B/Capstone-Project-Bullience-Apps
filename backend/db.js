@@ -1,9 +1,9 @@
 const mysql = require('mysql')
 const db = mysql.createConnection({
-    host:'34.170.104.75',
+    host:'localhost',
     user:'root',
-    password:'admin',
-    database:'database_user'
+    password:'',
+    database:'capstone'
 })
 
 module.exports = db
