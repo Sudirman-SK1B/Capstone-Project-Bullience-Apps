@@ -15,3 +15,7 @@ To install the backend application, follow these steps:
 3. Run the following command to install the dependencies:
 4. `npm install`
 5. Start the server with `npm run start`
+
+
+# Dokumentation Docs API
+API : https://documenter.getpostman.com/view/29952295/2s9YkgBjp6
