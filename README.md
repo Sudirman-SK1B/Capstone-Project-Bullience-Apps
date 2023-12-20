@@ -10,8 +10,8 @@
 # Installation steps
 
 To install the backend application, follow these steps:
-1. Clone the repository.
+1. Clone the repository project from Github.
 2. Navigate to the backend directory.
 3. Run the following command to install the dependencies:
-4. npm install
-5. Start the server with npm run start
+4. `npm install`
+5. Start the server with `npm run start`
