@@ -1,6 +1,7 @@
 # Cloud-Computing Jobdesk
 
-![image](https://github.com/Sudirman-SK1B/Capstone-Project-Bullience-Apps/assets/76098726/13807c52-67ea-4bf4-a47f-4f6e21c91fca)
+![image](https://github.com/Sudirman-SK1B/Capstone-Project-Bullience-Apps/assets/76098726/d5247d70-4c6c-4def-bd8b-3149cf43018c)
+
 
 
 # Architecture Cloud Bullience Apps
