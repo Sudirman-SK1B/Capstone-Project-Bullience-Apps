@@ -25,7 +25,7 @@ def predict_model2():
     try:
         data = request.get_json()
         # Lakukan prediksi menggunakan model kedua
-        prediction = model2.predict([data['text']])  # Ubah sesuai kebutuhan
+        prediction = predict_violence([data['text']])  # Ubah sesuai kebutuhan
 
         return jsonify({"prediction": str(prediction)})
     except Exception as e:
