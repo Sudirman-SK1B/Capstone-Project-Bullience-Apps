@@ -20,7 +20,7 @@ def predict_model1():
         return jsonify({"error": str(e)})
 
 # Endpoint untuk melakukan prediksi dengan model kedua
-@app.route('/predict/model2', methods=['POST'])
+@app.route('/predict/violence', methods=['POST'])
 def predict_model2():
     try:
         data = request.get_json()
